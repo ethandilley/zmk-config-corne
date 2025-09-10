@@ -73,14 +73,9 @@
     combos {
         compatible = "zmk,combos";
 
-        nav {
-            bindings = <&sl 3>;
-            key-positions = <37 40>;
-        };
-
         sys {
             bindings = <&sl 4>;
-            key-positions = <37 41>;
+            key-positions = <37 40>;
         };
 
         alt {
@@ -109,7 +104,7 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E             &kp R      &kp T    &kp Y  &kp U          &kp I      &kp O    &kp P     &studio_unlock
+&kp TAB         &kp Q  &kp W  &kp E             &kp R      &kp T    &kp Y  &kp U          &kp I      &kp O    &kp P     &sl 3
 &kp ESCAPE      &kp A  &kp S  &kp D             &kp F      &kp G    &kp H  &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V      &kp B    &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                               &kp LEFT_CONTROL  &kp SPACE  &sl 1    &sl 2  &kp BACKSPACE  &kp ENTER
@@ -127,7 +122,7 @@
 
             bindings = <
 &trans  &kp LS(N1)    &kp LS(N2)    &kp LS(N3)        &kp LS(N4)    &kp LS(N5)    &kp LS(N6)    &kp LS(N7)     &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &trans
-&to 0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N7         &kp N5      &kp N8      &kp N0      &trans
+&to 0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N7         &kp N8      &kp N9      &kp N0      &trans
 &trans  &trans        &trans        &trans            &trans        &trans        &trans        &trans         &kp COMMA   &kp PERIOD  &kp SLASH   &trans
                                     &kp LEFT_CONTROL  &trans        &sl 1         &sl 2         &kp BACKSPACE  &kp ENTER
             >;
@@ -165,7 +160,7 @@
             bindings = <
 &trans  &kp LS(LA(NUMBER_1))  &kp LS(LA(NUMBER_2))  &kp LS(LA(NUMBER_3))  &kp LS(LA(NUMBER_4))  &kp LS(LA(N5))    &kp LS(LA(NUMBER_6))  &kp LS(LA(N7))  &kp LS(LA(N8))  &kp LS(LA(N9))  &trans  &trans
 &trans  &kp LA(NUMBER_1)      &kp LA(NUMBER_2)      &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(N5)        &kp LA(NUMBER_6)      &kp LA(N7)      &kp LA(N8)      &kp LA(N9)      &trans  &trans
-&trans  &trans                &trans                &trans                &trans                &trans            &trans                &trans          &trans          &trans          &trans  &trans
+&trans  &studio_unlock        &trans                &trans                &trans                &trans            &trans                &trans          &trans          &trans          &trans  &trans
                                                     &trans                &trans                &trans            &trans                &trans          &trans
             >;
         };
